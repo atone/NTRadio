@@ -25,14 +25,14 @@ class RadioPlayer {
         return _setting.isPlaying
     }
     
-    private let _player: AVPlayer
+    private let _player: AVPlayer = AVPlayer(playerItem: nil)
     private var _station: Station
     private let _setting = AppSetting.shared
     
     init() {
         _station = stations[_setting.currentIndex]
-        _player = AVPlayer(url: _station.url)
         if _setting.isPlaying {
+            _player.replaceCurrentItem(with: AVPlayerItem(url: _station.url))
             _player.play()
         }
     }
@@ -40,6 +40,7 @@ class RadioPlayer {
     func play() {
         if !_setting.isPlaying {
             _setting.isPlaying = true
+            _player.replaceCurrentItem(with: AVPlayerItem(url: _station.url))
             _player.play()
         }
     }
@@ -48,6 +49,7 @@ class RadioPlayer {
         if _setting.isPlaying {
             _setting.isPlaying = false
             _player.pause()
+            _player.replaceCurrentItem(with: nil)
         }
     }
     
@@ -72,8 +74,8 @@ class RadioPlayer {
     private func changeStation(to station: Station) {
         if station != _station {
             _station = station
-            _player.replaceCurrentItem(with: AVPlayerItem(url: _station.url))
             if _setting.isPlaying {
+                _player.replaceCurrentItem(with: AVPlayerItem(url: _station.url))
                 _player.play()
             }
         }
