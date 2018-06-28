@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C8236D320E47E9F007451AF /* ControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C8236D220E47E9F007451AF /* ControlView.xib */; };
+		9C8236DD20E48E5C007451AF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C8236DB20E48E5C007451AF /* Localizable.strings */; };
+		9CC72DD620E3D91700A9A348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC72DD520E3D91700A9A348 /* AppDelegate.swift */; };
+		9CC72DD820E3D91700A9A348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC72DD720E3D91700A9A348 /* Assets.xcassets */; };
+		9CC72DDB20E3D91700A9A348 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC72DD920E3D91700A9A348 /* MainMenu.xib */; };
+		9CC72DE620E3E4AB00A9A348 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC72DE520E3E4AB00A9A348 /* Station.swift */; };
+		9CC72DE820E3EBCF00A9A348 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC72DE720E3EBCF00A9A348 /* RadioPlayer.swift */; };
+		9CC72DEB20E4152500A9A348 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC72DEA20E4152500A9A348 /* AppSetting.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9C8236D220E47E9F007451AF /* ControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlView.xib; sourceTree = "<group>"; };
+		9C8236D420E48D35007451AF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		9C8236DC20E48E5C007451AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9C8236DE20E48E63007451AF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		9C8236DF20E4902E007451AF /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		9C8236E020E4902E007451AF /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		9CC72DD220E3D91700A9A348 /* NT Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NT Radio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC72DD520E3D91700A9A348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CC72DD720E3D91700A9A348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CC72DDA20E3D91700A9A348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9CC72DDC20E3D91700A9A348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CC72DE520E3E4AB00A9A348 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		9CC72DE720E3EBCF00A9A348 /* RadioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
+		9CC72DE920E3FAF100A9A348 /* NT_Radio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NT_Radio.entitlements; sourceTree = "<group>"; };
+		9CC72DEA20E4152500A9A348 /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CC72DCF20E3D91700A9A348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CC72DC920E3D91700A9A348 = {
+			isa = PBXGroup;
+			children = (
+				9CC72DD420E3D91700A9A348 /* NT Radio */,
+				9CC72DD320E3D91700A9A348 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CC72DD320E3D91700A9A348 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CC72DD220E3D91700A9A348 /* NT Radio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CC72DD420E3D91700A9A348 /* NT Radio */ = {
+			isa = PBXGroup;
+			children = (
+				9CC72DE920E3FAF100A9A348 /* NT_Radio.entitlements */,
+				9CC72DD520E3D91700A9A348 /* AppDelegate.swift */,
+				9CC72DEA20E4152500A9A348 /* AppSetting.swift */,
+				9CC72DE520E3E4AB00A9A348 /* Station.swift */,
+				9CC72DE720E3EBCF00A9A348 /* RadioPlayer.swift */,
+				9CC72DD720E3D91700A9A348 /* Assets.xcassets */,
+				9CC72DD920E3D91700A9A348 /* MainMenu.xib */,
+				9C8236D220E47E9F007451AF /* ControlView.xib */,
+				9CC72DDC20E3D91700A9A348 /* Info.plist */,
+				9C8236DB20E48E5C007451AF /* Localizable.strings */,
+			);
+			path = "NT Radio";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CC72DD120E3D91700A9A348 /* NT Radio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CC72DE020E3D91700A9A348 /* Build configuration list for PBXNativeTarget "NT Radio" */;
+			buildPhases = (
+				9CC72DCE20E3D91700A9A348 /* Sources */,
+				9CC72DCF20E3D91700A9A348 /* Frameworks */,
+				9CC72DD020E3D91700A9A348 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NT Radio";
+			productName = "NT Radio";
+			productReference = 9CC72DD220E3D91700A9A348 /* NT Radio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CC72DCA20E3D91700A9A348 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Naitong Yu";
+				TargetAttributes = {
+					9CC72DD120E3D91700A9A348 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9CC72DCD20E3D91700A9A348 /* Build configuration list for PBXProject "NT Radio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 9CC72DC920E3D91700A9A348;
+			productRefGroup = 9CC72DD320E3D91700A9A348 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CC72DD120E3D91700A9A348 /* NT Radio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CC72DD020E3D91700A9A348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC72DD820E3D91700A9A348 /* Assets.xcassets in Resources */,
+				9C8236DD20E48E5C007451AF /* Localizable.strings in Resources */,
+				9C8236D320E47E9F007451AF /* ControlView.xib in Resources */,
+				9CC72DDB20E3D91700A9A348 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CC72DCE20E3D91700A9A348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC72DE820E3EBCF00A9A348 /* RadioPlayer.swift in Sources */,
+				9CC72DE620E3E4AB00A9A348 /* Station.swift in Sources */,
+				9CC72DEB20E4152500A9A348 /* AppSetting.swift in Sources */,
+				9CC72DD620E3D91700A9A348 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9C8236DB20E48E5C007451AF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C8236DC20E48E5C007451AF /* Base */,
+				9C8236DE20E48E63007451AF /* zh-Hans */,
+				9C8236E020E4902E007451AF /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		9CC72DD920E3D91700A9A348 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CC72DDA20E3D91700A9A348 /* Base */,
+				9C8236D420E48D35007451AF /* zh-Hans */,
+				9C8236DF20E4902E007451AF /* zh-Hant */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CC72DDE20E3D91700A9A348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9CC72DDF20E3D91700A9A348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9CC72DE120E3D91700A9A348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NT Radio/NT_Radio.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9TXRXPVXCE;
+				INFOPLIST_FILE = "NT Radio/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.yunaitong.NT-Radio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		9CC72DE220E3D91700A9A348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NT Radio/NT_Radio.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9TXRXPVXCE;
+				INFOPLIST_FILE = "NT Radio/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.yunaitong.NT-Radio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CC72DCD20E3D91700A9A348 /* Build configuration list for PBXProject "NT Radio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CC72DDE20E3D91700A9A348 /* Debug */,
+				9CC72DDF20E3D91700A9A348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CC72DE020E3D91700A9A348 /* Build configuration list for PBXNativeTarget "NT Radio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CC72DE120E3D91700A9A348 /* Debug */,
+				9CC72DE220E3D91700A9A348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CC72DCA20E3D91700A9A348 /* Project object */;
+}

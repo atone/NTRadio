@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AppDelegate" customModule="NT_Radio" customModuleProvider="target">
+            <connections>
+                <outlet property="nextButton" destination="fnF-be-ELc" id="3K8-Mk-lRn"/>
+                <outlet property="playButton" destination="k4q-ih-nmW" id="vHs-lB-Wui"/>
+                <outlet property="prevButton" destination="yW5-Np-Rp1" id="vOC-cq-Ova"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="32"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" spacing="20" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Qa-Df-Bov">
+                    <rect key="frame" x="37" y="0.0" width="106" height="32"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yW5-Np-Rp1">
+                            <rect key="frame" x="0.0" y="0.0" width="22" height="32"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Prev" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="N8o-PT-qej">
+                                <behavior key="behavior" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="previousStation:" target="-2" id="JID-ob-SWl"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="k4q-ih-nmW">
+                            <rect key="frame" x="42" y="0.0" width="22" height="32"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Play" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="0oU-nl-3jS">
+                                <behavior key="behavior" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="togglePlayPause:" target="-2" id="kq6-18-UQm"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fnF-be-ELc">
+                            <rect key="frame" x="84" y="0.0" width="22" height="32"/>
+                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Next" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="now-D3-Imd">
+                                <behavior key="behavior" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="nextStation:" target="-2" id="qvD-TN-w3i"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4Qa-Df-Bov" secondAttribute="bottom" id="Ljf-ex-eBy"/>
+                <constraint firstItem="4Qa-Df-Bov" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="UAp-FF-eZI"/>
+                <constraint firstItem="4Qa-Df-Bov" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="wSU-9I-PLW"/>
+            </constraints>
+            <point key="canvasLocation" x="18" y="98"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Next" width="22" height="30"/>
+        <image name="Play" width="14" height="30"/>
+        <image name="Prev" width="22" height="30"/>
+    </resources>
+</document>
