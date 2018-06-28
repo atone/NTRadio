@@ -46,6 +46,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C92BA2720E5443000AB5DA7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CC72DD720E3D91700A9A348 /* Assets.xcassets */,
+				9CC72DE920E3FAF100A9A348 /* NT_Radio.entitlements */,
+				9CC72DDC20E3D91700A9A348 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 		9CC72DC920E3D91700A9A348 = {
 			isa = PBXGroup;
 			children = (
@@ -65,15 +75,13 @@
 		9CC72DD420E3D91700A9A348 /* NT Radio */ = {
 			isa = PBXGroup;
 			children = (
-				9CC72DE920E3FAF100A9A348 /* NT_Radio.entitlements */,
+				9C92BA2720E5443000AB5DA7 /* Support Files */,
 				9CC72DD520E3D91700A9A348 /* AppDelegate.swift */,
 				9CC72DEA20E4152500A9A348 /* AppSetting.swift */,
 				9CC72DE520E3E4AB00A9A348 /* Station.swift */,
 				9CC72DE720E3EBCF00A9A348 /* RadioPlayer.swift */,
-				9CC72DD720E3D91700A9A348 /* Assets.xcassets */,
 				9CC72DD920E3D91700A9A348 /* MainMenu.xib */,
 				9C8236D220E47E9F007451AF /* ControlView.xib */,
-				9CC72DDC20E3D91700A9A348 /* Info.plist */,
 				9C8236DB20E48E5C007451AF /* Localizable.strings */,
 			);
 			path = "NT Radio";
