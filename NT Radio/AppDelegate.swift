@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import MediaPlayer
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -26,7 +27,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.image = #imageLiteral(resourceName: "RadioIcon")
         
         constructMenu()
-        updateStatus()
+        updateMenuStatus()
+        
+        if #available(OSX 10.12.2, *) {
+            registerRemoteCommandCenter()
+            updateNowPlaying()
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -62,7 +68,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.menu = menu
     }
     
-    func updateStatus() {
+    func updateMenuStatus() {
         if player.isPlaying {
             playButton.image = #imageLiteral(resourceName: "Pause")
         } else {
@@ -80,6 +86,47 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
+    @available(OSX 10.12.2, *)
+    func registerRemoteCommandCenter() {
+        let center = MPRemoteCommandCenter.shared()
+        center.pauseCommand.addTarget { [unowned self] (event)  in
+            self.player.pause()
+            self.updateMenuStatus()
+            self.updateNowPlaying()
+            return MPRemoteCommandHandlerStatus.success
+        }
+        center.playCommand.addTarget { [unowned self] (event) in
+            self.player.play()
+            self.updateMenuStatus()
+            self.updateNowPlaying()
+            return MPRemoteCommandHandlerStatus.success
+        }
+        
+        center.togglePlayPauseCommand.addTarget { [unowned self] (event) in
+            self.togglePlayPause(self)
+            return MPRemoteCommandHandlerStatus.success
+        }
+        center.nextTrackCommand.addTarget { [unowned self] (event) in
+            self.nextStation(self)
+            return MPRemoteCommandHandlerStatus.success
+        }
+        center.previousTrackCommand.addTarget { [unowned self] (event) in
+            self.previousStation(self)
+            return MPRemoteCommandHandlerStatus.success
+        }
+    }
+    
+    @available(OSX 10.12.2, *)
+    func updateNowPlaying() {
+        let infoCenter = MPNowPlayingInfoCenter.default()
+        var playingInfo: [String: Any] = [:]
+        playingInfo[MPMediaItemPropertyTitle] = player.currentPlayingTitle
+        playingInfo[MPNowPlayingInfoPropertyMediaType] = NSNumber(value: MPNowPlayingInfoMediaType.audio.rawValue)
+        playingInfo[MPNowPlayingInfoPropertyIsLiveStream] = NSNumber(value: true)
+        infoCenter.nowPlayingInfo = playingInfo
+        infoCenter.playbackState = player.isPlaying ? MPNowPlayingPlaybackState.playing : MPNowPlayingPlaybackState.paused
+    }
+    
     
     @IBAction func togglePlayPause(_ sender: Any) {
         if player.isPlaying {
@@ -87,24 +134,36 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         } else {
             player.play()
         }
-        updateStatus()
+        updateMenuStatus()
+        if #available(OSX 10.12.2, *) {
+            updateNowPlaying()
+        }
     }
     
     @IBAction func previousStation(_ sender: Any) {
         player.previous()
-        updateStatus()
+        updateMenuStatus()
+        if #available(OSX 10.12.2, *) {
+            updateNowPlaying()
+        }
     }
     
     @IBAction func nextStation(_ sender: Any) {
         player.next()
-        updateStatus()
+        updateMenuStatus()
+        if #available(OSX 10.12.2, *) {
+            updateNowPlaying()
+        }
     }
     
     @objc func changeStation(_ sender: Any) {
         if let menuItem = sender as? NSMenuItem,
             let index = allStationsMenu?.index(of: menuItem) {
             player.changeStation(to: index)
-            updateStatus()
+            updateMenuStatus()
+            if #available(OSX 10.12.2, *) {
+                updateNowPlaying()
+            }
         }
     }
 }
