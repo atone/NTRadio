@@ -1,68 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>StationName</key>
-	<array>
+<array>
+	<dict>
+		<key>name</key>
 		<string>中国之声</string>
-		<string>经济之声</string>
-		<string>音乐之声</string>
-		<string>经典音乐广播</string>
-		<string>中华之声</string>
-		<string>神州之声</string>
-		<string>华夏之声</string>
-		<string>香港之声</string>
-		<string>民族之声</string>
-		<string>文艺之声</string>
-		<string>老年之声</string>
-		<string>藏语广播</string>
-		<string>维语广播</string>
-		<string>娱乐广播</string>
-		<string>中国交通广播</string>
-		<string>中国乡村之声</string>
-		<string>哈语广播</string>
-		<string>相声小品频道</string>
-		<string>古典音乐频道</string>
-		<string>长篇联播频道</string>
-		<string>中国民乐频道</string>
-		<string>环球资讯</string>
-		<string>Easy FM</string>
-		<string>Hit FM</string>
-		<string>Piano Solo Live</string>
-		<string>WTWW Transmitter 1</string>
-		<string>WTWW Transmitter 2</string>
-		<string>WTWW Transmitter 3</string>
-	</array>
-	<key>StationURL</key>
-	<array>
+		<key>url</key>
 		<string>http://ngcdn001.cnr.cn/live/zgzs/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>经济之声</string>
+		<key>url</key>
 		<string>http://ngcdn002.cnr.cn/live/jjzs/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>音乐之声</string>
+		<key>url</key>
 		<string>http://ngcdn003.cnr.cn/live/yyzs/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>经典音乐广播</string>
+		<key>url</key>
 		<string>http://ngcdn004.cnr.cn/live/dszs/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>中华之声</string>
+		<key>url</key>
 		<string>http://ngcdn005.cnr.cn/live/zhzs/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>神州之声</string>
+		<key>url</key>
 		<string>http://ngcdn006.cnr.cn/live/szzs/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>华夏之声</string>
+		<key>url</key>
 		<string>http://ngcdn007.cnr.cn/live/hxzs/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>香港之声</string>
+		<key>url</key>
 		<string>http://ngcdn008.cnr.cn/live/xgzs/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>民族之声</string>
+		<key>url</key>
 		<string>http://ngcdn009.cnr.cn/live/mzzs/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>文艺之声</string>
+		<key>url</key>
 		<string>http://ngcdn010.cnr.cn/live/wyzs/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>老年之声</string>
+		<key>url</key>
 		<string>http://ngcdn011.cnr.cn/live/lnzs/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>藏语广播</string>
+		<key>url</key>
 		<string>http://ngcdn012.cnr.cn/live/zygb/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>维语广播</string>
+		<key>url</key>
 		<string>http://ngcdn013.cnr.cn/live/wygb/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>娱乐广播</string>
+		<key>url</key>
 		<string>http://ngcdn014.cnr.cn/live/ylgb/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>中国交通广播</string>
+		<key>url</key>
 		<string>http://ngcdn016.cnr.cn/live/gsgljtgb/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>中国乡村之声</string>
+		<key>url</key>
 		<string>http://ngcdn017.cnr.cn/live/xczs/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>哈语广播</string>
+		<key>url</key>
 		<string>http://ngcdn025.cnr.cn/live/hygb/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>相声小品频道</string>
+		<key>url</key>
 		<string>http://ngcdn023.cnr.cn/live/xsxp/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>古典音乐频道</string>
+		<key>url</key>
 		<string>http://ngcdn022.cnr.cn/live/gdyy/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>长篇联播频道</string>
+		<key>url</key>
 		<string>http://ngcdn024.cnr.cn/live/cplb/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>中国民乐频道</string>
+		<key>url</key>
 		<string>http://ngcdn021.cnr.cn/live/zgmy/index.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>环球资讯</string>
+		<key>url</key>
 		<string>http://sk.cri.cn/905.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Easy FM</string>
+		<key>url</key>
 		<string>http://sk.cri.cn/915.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Hit FM</string>
+		<key>url</key>
 		<string>http://sk.cri.cn/887.m3u8</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Piano Solo Live</string>
+		<key>url</key>
 		<string>http://pianosolo.streamguys.net/live</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>WTWW Transmitter 1</string>
+		<key>url</key>
 		<string>http://64.235.54.14:8015/</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>WTWW Transmitter 2</string>
+		<key>url</key>
 		<string>http://64.235.54.14:8020/</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>WTWW Transmitter 3</string>
+		<key>url</key>
 		<string>http://64.235.54.14:8026/</string>
-	</array>
-</dict>
+	</dict>
+</array>
 </plist>

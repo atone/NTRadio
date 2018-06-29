@@ -15,12 +15,19 @@ class AppSetting {
     private struct Static {
         static let isPlaying = "radio.isPlaying"
         static let currentIndex = "radio.currentIndex"
+        static let stations = "radio.stations"
     }
     
     private init() {
+        // Read default station list
+        let configPath = Bundle.main.path(forResource: "Stations", ofType: "plist")
+        let initialStations = NSArray(contentsOfFile: configPath!) as! [[String:String]]
+        
+        // Register default settings
         let initialSetting: [String: Any] = [
             Static.isPlaying: true,
-            Static.currentIndex: 0
+            Static.currentIndex: 0,
+            Static.stations: initialStations
         ]
         defaults.register(defaults: initialSetting)
     }
@@ -40,6 +47,18 @@ class AppSetting {
         }
         set {
             defaults.set(newValue, forKey: Static.currentIndex)
+        }
+    }
+    
+    var stations: [[String:String]] {
+        get {
+            if let stations = defaults.array(forKey: Static.stations) as? [[String:String]] {
+                return stations
+            }
+            return [[String:String]]()
+        }
+        set {
+            defaults.set(newValue, forKey: Static.stations)
         }
     }
 }

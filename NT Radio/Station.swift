@@ -12,17 +12,11 @@ struct Station {
     let name: String
     let url: URL
     
-    static let all = allStations()
-    
-    private static func allStations() -> [Station] {
+    static var all: [Station] {
         var stations = [Station]()
-        let configPath = Bundle.main.path(forResource: "Stations", ofType: "plist")
-        let configDict = NSDictionary(contentsOfFile: configPath!)
-        if let stationDict = configDict as? [String: Any],
-            let stationNames = stationDict["StationName"] as? [String],
-            let stationURLs = stationDict["StationURL"] as? [String] {
-            for (index, name) in stationNames.enumerated() {
-                stations.append(Station(name: name, url: URL(string: stationURLs[index])!))
+        for stationDict in AppSetting.shared.stations {
+            if let name = stationDict["name"], let url = stationDict["url"] {
+                stations.append(Station(name: name, url: URL(string: url)!))
             }
         }
         return stations
