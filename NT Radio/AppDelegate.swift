@@ -16,6 +16,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var playButton: NSButton!
     @IBOutlet weak var nextButton: NSButton!
     
+    var allStationsWindowController: StationsWindowController?
+    
     let player = RadioPlayer()
 
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
@@ -24,6 +26,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        let storyboard = NSStoryboard(name: NSStoryboard.Name("AllStations"), bundle: nil)
+        allStationsWindowController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("StationsWindowController")) as? StationsWindowController
+        
         statusItem.image = #imageLiteral(resourceName: "RadioIcon")
         
         constructMenu()
@@ -44,7 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let controlItem = NSMenuItem()
         var topLevelObjects: NSArray?
-        if Bundle.main.loadNibNamed(NSNib.Name(rawValue: "ControlView"), owner: self, topLevelObjects: &topLevelObjects) {
+        if Bundle.main.loadNibNamed(NSNib.Name("ControlView"), owner: self, topLevelObjects: &topLevelObjects) {
             controlItem.view = topLevelObjects!.first(where: {$0 is NSView}) as? NSView
         }
         menu.addItem(controlItem)
@@ -61,6 +66,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.allStationsMenu = allStationsMenu
         allStationsMenuItem.submenu = allStationsMenu
         menu.addItem(allStationsMenuItem)
+        
+        let editStationsMenuItem = NSMenuItem(title: "Edit Stations...", action: #selector(editStations(_:)), keyEquivalent: "")
+        menu.addItem(editStationsMenuItem)
         
         menu.addItem(NSMenuItem.separator())
         menu.addItem(NSMenuItem(title: NSLocalizedString("quit", comment: ""), action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
@@ -165,6 +173,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 updateNowPlaying()
             }
         }
+    }
+    
+    @objc func editStations(_ sender: Any) {
+        allStationsWindowController?.showWindow(sender)
     }
 }
 

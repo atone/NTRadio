@@ -10,6 +10,8 @@
 		9C8236D320E47E9F007451AF /* ControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C8236D220E47E9F007451AF /* ControlView.xib */; };
 		9C8236DD20E48E5C007451AF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C8236DB20E48E5C007451AF /* Localizable.strings */; };
 		9C92BA2920E5454400AB5DA7 /* Stations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C92BA2820E5454400AB5DA7 /* Stations.plist */; };
+		9CC26B1620E5FD36004A8A29 /* AllStations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC26B1520E5FD36004A8A29 /* AllStations.storyboard */; };
+		9CC26B1820E5FF74004A8A29 /* StationsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC26B1720E5FF74004A8A29 /* StationsWindowController.swift */; };
 		9CC72DD620E3D91700A9A348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC72DD520E3D91700A9A348 /* AppDelegate.swift */; };
 		9CC72DD820E3D91700A9A348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC72DD720E3D91700A9A348 /* Assets.xcassets */; };
 		9CC72DDB20E3D91700A9A348 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC72DD920E3D91700A9A348 /* MainMenu.xib */; };
@@ -26,6 +28,8 @@
 		9C8236DF20E4902E007451AF /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainMenu.strings"; sourceTree = "<group>"; };
 		9C8236E020E4902E007451AF /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		9C92BA2820E5454400AB5DA7 /* Stations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Stations.plist; sourceTree = "<group>"; };
+		9CC26B1520E5FD36004A8A29 /* AllStations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllStations.storyboard; sourceTree = "<group>"; };
+		9CC26B1720E5FF74004A8A29 /* StationsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsWindowController.swift; sourceTree = "<group>"; };
 		9CC72DD220E3D91700A9A348 /* NT Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NT Radio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC72DD520E3D91700A9A348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CC72DD720E3D91700A9A348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,8 +87,10 @@
 				9CC72DEA20E4152500A9A348 /* AppSetting.swift */,
 				9CC72DE520E3E4AB00A9A348 /* Station.swift */,
 				9CC72DE720E3EBCF00A9A348 /* RadioPlayer.swift */,
+				9CC26B1720E5FF74004A8A29 /* StationsWindowController.swift */,
 				9CC72DD920E3D91700A9A348 /* MainMenu.xib */,
 				9C8236D220E47E9F007451AF /* ControlView.xib */,
+				9CC26B1520E5FD36004A8A29 /* AllStations.storyboard */,
 				9C8236DB20E48E5C007451AF /* Localizable.strings */,
 			);
 			path = "NT Radio";
@@ -158,6 +164,7 @@
 				9CC72DD820E3D91700A9A348 /* Assets.xcassets in Resources */,
 				9C92BA2920E5454400AB5DA7 /* Stations.plist in Resources */,
 				9C8236DD20E48E5C007451AF /* Localizable.strings in Resources */,
+				9CC26B1620E5FD36004A8A29 /* AllStations.storyboard in Resources */,
 				9C8236D320E47E9F007451AF /* ControlView.xib in Resources */,
 				9CC72DDB20E3D91700A9A348 /* MainMenu.xib in Resources */,
 			);
@@ -171,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CC72DE820E3EBCF00A9A348 /* RadioPlayer.swift in Sources */,
+				9CC26B1820E5FF74004A8A29 /* StationsWindowController.swift in Sources */,
 				9CC72DE620E3E4AB00A9A348 /* Station.swift in Sources */,
 				9CC72DEB20E4152500A9A348 /* AppSetting.swift in Sources */,
 				9CC72DD620E3D91700A9A348 /* AppDelegate.swift in Sources */,
