@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var playButton: NSButton!
     @IBOutlet weak var nextButton: NSButton!
     
-    var allStationsWindowController: StationsWindowController?
+    var windowController: NSWindowController?
     
     let player = RadioPlayer()
 
@@ -27,7 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         let storyboard = NSStoryboard(name: NSStoryboard.Name("AllStations"), bundle: nil)
-        allStationsWindowController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("StationsWindowController")) as? StationsWindowController
+        windowController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("WindowController")) as? NSWindowController
         
         statusItem.image = #imageLiteral(resourceName: "RadioIcon")
         
@@ -176,7 +176,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @objc func editStations(_ sender: Any) {
-        allStationsWindowController?.showWindow(sender)
+        windowController?.showWindow(sender)
     }
 }
 

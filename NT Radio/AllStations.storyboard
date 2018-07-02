@@ -10,7 +10,7 @@
         <!--Window Controller-->
         <scene sceneID="qqV-pj-XhE">
             <objects>
-                <windowController storyboardIdentifier="StationsWindowController" id="4SA-YZ-kec" customClass="StationsWindowController" customModule="NT_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="WindowController" id="4SA-YZ-kec" sceneMemberID="viewController">
                     <window key="window" title="Stations" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="FAb-dP-HtD">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -39,7 +39,7 @@
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJg-zf-jmq">
                                 <rect key="frame" x="20" y="56" width="440" height="194"/>
                                 <clipView key="contentView" id="xdk-3l-GhC">
-                                    <rect key="frame" x="1" y="23" width="438" height="170"/>
+                                    <rect key="frame" x="1" y="0.0" width="438" height="193"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="z2H-tx-3z2" viewBased="YES" id="hOl-3q-Pfd">
@@ -133,7 +133,7 @@
                                     <rect key="frame" x="1" y="177" width="438" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Fgs-zF-eo9">
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="Fgs-zF-eo9">
                                     <rect key="frame" x="224" y="17" width="15" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
