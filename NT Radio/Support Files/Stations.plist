@@ -152,6 +152,12 @@
 		<key>url</key>
 		<string>http://pianosolo.streamguys.net/live</string>
 	</dict>
+    <dict>
+        <key>name</key>
+        <string>NHK World</string>
+        <key>url</key>
+        <string>https://nhkworld.webcdn.stream.ne.jp/www11/radiojapan/all/263945/live_s.m3u8</string>
+    </dict>
 	<dict>
 		<key>name</key>
 		<string>WTWW Transmitter 1</string>
