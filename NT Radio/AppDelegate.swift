@@ -26,8 +26,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        let storyboard = NSStoryboard(name: NSStoryboard.Name("AllStations"), bundle: nil)
-        windowController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("WindowController")) as? NSWindowController
+        let storyboard = NSStoryboard(name: "AllStations", bundle: nil)
+        windowController = storyboard.instantiateController(withIdentifier: "WindowController") as? NSWindowController
         
         statusItem.image = #imageLiteral(resourceName: "RadioIcon")
         
@@ -49,7 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let controlItem = NSMenuItem()
         var topLevelObjects: NSArray?
-        if Bundle.main.loadNibNamed(NSNib.Name("ControlView"), owner: self, topLevelObjects: &topLevelObjects) {
+        if Bundle.main.loadNibNamed("ControlView", owner: self, topLevelObjects: &topLevelObjects) {
             controlItem.view = topLevelObjects!.first(where: {$0 is NSView}) as? NSView
         }
         menu.addItem(controlItem)
