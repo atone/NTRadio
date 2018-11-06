@@ -176,5 +176,11 @@
 		<key>url</key>
 		<string>http://64.235.54.14:8026/</string>
 	</dict>
+    <dict>
+        <key>name</key>
+        <string>良友电台（同行频道）</string>
+        <key>url</key>
+        <string>http://listen.txly1.net:8000/ly729_a</string>
+    </dict>
 </array>
 </plist>
